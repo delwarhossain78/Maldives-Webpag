@@ -1,0 +1,95 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.hero{
+    height: 100vh;
+    width: 100%;
+    background-image: url(image/background.png);
+    background-position: center;
+    background-size: cover;
+}
+.logo{
+    width: 250px;
+    height: 100px;
+    position: absolute;
+    background: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 2;
+}
+.logo img{
+    width: 80px;
+}
+.sidebar{
+    width: 250px;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    background: rgba(255,255,255,0.6);
+    position: absolute;
+}
+.texr-box{
+    transform: rotate(-90deg);
+    position: absolute;
+    top: 45%;
+    text-align: center;
+}
+.texr-box h1{
+    font-size: 28px;
+    font-weight: 100;
+}
+.texr-box h4{
+    margin: 7px 0 10px;
+}
+.content{
+    color: #fff;
+    position: absolute;
+    right: 200px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+.content h1{
+    font-size: 100px;
+}
+.content p{
+    margin: 10px 0 40px;
+}
+.btn{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 170px;
+    padding: 10px 0;
+    background: #fff;
+    color: #000;
+    border-radius: 3px;
+    cursor: pointer;
+}
+.btn img{
+    width: 30px;
+    margin-right: 15px;
+}
+#backVideo{
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    display: none;
+}
+
+@media (min-aspect-ratio: 16/9){
+    #backVideo{
+        width: 100%;
+        height: auto;
+    }
+}
+@media (max-aspect-ratio: 16/9){
+    #backVideo{
+        width: auto;
+        height: 100%;
+    }
+}
+
+
+
